@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="my.com.breakout.StartActivity"
+    android:background="@drawable/game_title">
+
+    <ImageButton
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_start"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:clickable="true" />
+
+    <RadioGroup
+        android:id="@+id/Group1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStart"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="40dp">
+
+        <RadioButton
+            android:id="@+id/radioMusic1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ON"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioMusic2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFF"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_marginLeft="20dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/Group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Group1"
+        android:layout_alignRight="@+id/Group1"
+        android:layout_alignEnd="@+id/Group1">
+
+        <RadioButton
+            android:id="@+id/radioSound1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ON"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioSound2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFF"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_marginLeft="20dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/Group3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Group2"
+        android:layout_alignRight="@+id/Group2"
+        android:layout_alignEnd="@+id/Group2">
+
+        <RadioButton
+            android:id="@+id/radioVib1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ON"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioVib2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFF"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_marginLeft="20dp" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/btnQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_quit"
+        android:layout_marginTop="35dp"
+        android:clickable="true"
+        android:layout_below="@+id/Group3"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
